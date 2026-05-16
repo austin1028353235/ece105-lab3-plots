@@ -127,8 +127,8 @@ def main():
     """
     sensor_a, sensor_b, timestamps = generate_data(seed=2214)
 
-    fig, axes = plt.subplots(1, 3, figsize=(15, 5))
-
+    fig, axes = plt.subplots(2, 2, figsize=(12, 10))
+    
     plot_scatter(sensor_a, sensor_b, timestamps, axes[0])
     plot_histogram(sensor_a, sensor_b, axes[1])
     plot_boxplot(sensor_a, sensor_b, axes[2])
